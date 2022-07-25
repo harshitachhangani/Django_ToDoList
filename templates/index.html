@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+     <div class="container my-3">
+      <h2 class="text-center">Welcome to ToDo list - Add a Task</h2>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1"><b>Task Tiltle</b></label>
+        </br>
+          <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp" placeholder="Enter email">
+          
+        </div>
+      </br>
+        <div class="form-group">
+          <label for="exampleInputPassword1"><b>Task Description</b></label>
+        </br>
+          <textarea class="form-control" name="desc" id="desc" cols="30" rows="5"></textarea>
+        </div>
+      </br>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+     </div>
+{% endblock body %}
+   
+  
